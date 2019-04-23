@@ -1,7 +1,6 @@
 #include <windows.h>
 
 void main()
-
 {
 	Beep(262, 1000);
 	Beep(362, 1000);
