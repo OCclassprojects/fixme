@@ -1,0 +1,1 @@
+This appears to be a good begining for my adventure into git and github. Mila Paul, thanks for tutoring. it's been fun thus far. 
