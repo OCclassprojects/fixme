@@ -1,0 +1,405 @@
+/*container grid*/
+.container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(7, 1fr);
+  grid-gap: 0.em;
+}
+
+/*right column*/
+#right {
+  grid-column: 4 / 6;
+  grid-row: 1 / 6;
+  background-color: white;
+  min-width: 300px;
+  border-right-style: solid;
+  border-right-color: grey;
+  border-right-width: 0.5em;
+  border-top-style: solid;
+  border-top-color: grey;
+  border-top-width: 0.5em;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  border-bottom-width: 0.5em;
+  overflow-wrap: break-word;
+}
+
+/*left column*/
+#left {
+  grid-column: 3 / 4;
+  grid-row: 1/ 6;
+  background-color: black;
+  position: relative;
+  border-left-style: solid;
+  border-left-color: grey;
+  border-left-width: 0.5em;
+  border-top-style: solid;
+  border-top-color: grey;
+  border-top-width: 0.5em;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  border-bottom-width: 0.5em;
+}
+
+/*left side*/
+.personal{
+  color: #F2BC0C;
+  grid-column: 4 / 6;
+  font-family: 'Rubik', sans-serif;
+}
+
+/*titles*/
+h1, h2, h3{
+  font-family: 'Rubik', sans-serif;
+  padding: 0.33em;
+}
+
+/*H3 font*/
+h3{
+  font-size: 1em;
+  font-family: 'Rubik', sans-serif;
+}
+
+/*text font*/
+p, li{
+  font-family: 'Rubik', sans-serif;
+  padding: 0.5em;
+  font-size: 0.88em;
+  font-style: normal;
+  font-weight: 400;
+} 
+
+/*list weight*/
+li{
+  font-weight: 500;
+}
+
+/*Name color*/
+.name{
+  background-color: #F2BC0C; 
+  padding: 0.8em;  
+}
+
+/*first name font*/
+#firstname{
+  font-family: 'Calistoga', cursive;
+  text-align: center;
+}
+
+/*last name font*/
+#lastname{
+  color: black;
+  font-family: 'Calistoga', cursive;
+  text-align: center;
+}
+
+/*education*/
+#title1{
+  background-color: #F2BC0C;
+  padding: 0.33em;
+  font-size: 1.6em;
+  font-family: 'Rubik', sans-serif; 
+}
+
+/*work experience*/
+#title2{
+  background-color: #F2BC0C;
+  padding: 0.33em;
+  font-size: 1.5em;
+  font-family: 'Rubik', sans-serif;
+}
+
+/*horizontal line*/
+hr{
+  background-color: #F2BC0C;
+  height: 3px;
+}
+
+/*center left tittles*/
+#language, #skill, #contact{
+  text-align: center;
+}
+
+/* french level*/
+#f{
+  width: 20%;
+  margin-left:0%;
+}
+/* html level*/
+#ht{
+  width: 90%;
+  margin-left:0%;
+}
+
+/*css level*/
+#cs{
+  width: 75%;
+  margin-left:0%;
+}
+
+/*english level*/
+#e{
+  width: 80%;
+  margin-left:0%;
+}
+
+/*cel icon*/
+#cel{
+  position: relative;
+  top: -1.5em;
+  font-size: 20px;
+  left: -2em;
+}
+
+/*world icon*/
+#mundo{
+  position: relative;
+  top: -1.5em;
+  font-size: 20px;
+}
+
+/*cel number link*/
+#number{
+  position: relative;
+  left: -2.7em;
+}
+
+ /*mail icon*/ 
+#mail{
+  position: relative;
+  left: -4.9em;
+  top: -0.5em;
+}
+
+ /*email adress link*/ 
+#adress{
+  position: relative;
+  left: 2em;
+  top: -3.4em;
+  font-size: 1em
+}
+
+ /*linkedin icon*/ 
+#linked{
+  position: relative;
+  left: 0.em;
+  top: -4.4em;
+}
+
+/*linkedin link*/
+#linkedin{
+  position: relative;
+  left: 2.5em;
+  top: -5.4em;
+  font-size: 1.2em
+}
+
+/* selfie*/
+#me{
+  width: 13em;
+  padding: 0.9em;
+  border-radius: 50%;  
+}
+
+/*visited link*/
+a:visited{
+  color: darkorchid;
+}
+
+/*selected link*/
+a:hover {
+  color: white;
+}
+
+/*links color*/
+a{
+  color: #F2BC0C;
+}
+
+/*body background*/
+body{
+  background-image:url("https://i.postimg.cc/1zkRkPMs/40-Black-Wood-Background-Textures-8.png");
+  background-color: #403F3E;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 645px;
+}
+
+/*small screen laptops*/
+@media all and (max-width: 1000px) and (min-width: 880px) {
+  #title1, #title2, h3,h2{
+  font-size: 1em;
+  }
+  
+  /*text font*/
+  p, li{
+  font-size: 0.8em;
+  }
+  
+ /*name font*/
+  h1{
+  font-size: 1em;
+  }
+  
+  /*email font*/
+  #adress{
+  font-size: 0.85em;  
+  }
+}
+
+/*tablets*/
+@media only screen and (max-width: 880px)and (min-width: 480px){
+
+  /*body background*/
+  body{
+    background-color: #0e0d0d;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /*titles font*/
+  #title1, #title2, h3,h2{
+    font-size: 1em;
+  }
+  
+  /*text font*/
+  p, li{
+    font-size: 0.8em;
+  }
+  
+  /*name font*/
+  h1{
+    font-size: 1em;
+  }
+  
+  /*right column*/
+  #right{
+    grid-column:2/5;
+  }
+  
+  /*left column*/
+  #left{
+    grid-column:1/2;
+  }
+  
+  /*email font*/
+  #adress{
+    font-size: 0.85em;  
+  }
+  
+}
+/*cell phones*/
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px){
+  body{ background-image: url("https://i.postimg.cc/1zkRkPMs/40-Black-Wood-Background-Textures-8.png");
+    background-color: #403F3E;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  
+  /*container grid*/  
+  .container {
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(7, 1fr);
+    }
+  
+  /*right column*/  
+  #right{
+    grid-column: 4/7;
+   
+  }
+  
+  /*left column*/
+  #left{
+    grid-column:1/4;
+    width: 25.4em; 
+  }
+  
+  /*right titles font*/
+  h3{
+    font-size: 1.4em;
+  }
+  
+  /*titles font*/
+  #title1, #title2, h2{
+    font-size: 1.6em;
+  }
+  
+  /*text font*/
+  p, li{
+    font-size: 1.4em;
+  }
+  
+  /*name font*/
+  h1{
+    font-size: 1.6em;
+  }
+  
+  /*email adress link*/
+  #adress{
+    display:flex;
+    position: relative;
+    left: -2.5em;
+    top: 1em;
+    font-size: 1.48em  
+  }
+  
+  /*linkedin link*/
+  #linkedin{
+    position: relative;
+    right: -1em;
+    top: -1.8em;
+    font-size: 1.53em
+  }
+  
+  /*linkedin icon*/ 
+  #linked{
+    position: relative;
+    left: 0.7em;
+    top: 1.2em;
+  }
+  
+  /*mail icon*/
+  #mail{
+    position: relative;
+    left: -2.7em;
+    top: -0.5em;
+    }
+  
+   /*cel icon*/
+  #cel{
+    position: relative;
+    top: -1.2em;
+    font-size: 21px;
+    left: -1.2em;
+    }
+  
+   /*world icon*/
+  #mundo{
+    position: relative;
+    top: -2.5em;
+    font-size: 23px;
+    left: 0.8em;
+    }
+  
+   /*cel number link*/
+  #number{
+    position: relative;
+    left: -0.5em;
+    font-size: 1.8em
+      }
+  
+   /*home adress link*/
+  #street{
+    position: relative;
+    left: 1em;
+    font-size: 1.53em;
+    top: -2em;
+      }
+  
+  /*left titles*/
+  #language, #skill, #contact{
+    font-size: 2em;
+      }
+}
