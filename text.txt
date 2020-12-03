@@ -1,0 +1,1 @@
+Ok new change to the text of this file. I want to see the exact behavior of rm vs reset.
