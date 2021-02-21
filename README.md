@@ -1,1 +1,1 @@
-mysong.c contains favourite songs
+mysong.c contains my favourite song
